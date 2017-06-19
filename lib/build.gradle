@@ -1,0 +1,46 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'groovy'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+    compile 'org.apache.ivy:ivy:2.3.0'
+    compile files('libs/mysql-connector-java-5.1.5-bin.jar')
+    runtime 'mysql:mysql-connector-java:5.1.5'
+    compile files('libs/curvesapi-1.04.jar')
+    compile files('libs/poi-3.15.jar')
+    compile files('libs/poi-examples-3.15.jar')
+    compile files('libs/poi-excelant-3.15.jar')
+    compile files('libs/poi-ooxml-3.15.jar')
+    compile files('libs/poi-ooxml-schemas-3.15.jar')
+    compile files('libs/poi-scratchpad-3.15.jar')
+    compile files('libs/xmlbeans-2.6.0.jar')
+    compile files('libs/commons-codec-1.10.jar')
+    compile files('libs/commons-collections4-4.1.jar')
+    compile files('libs/commons-logging-1.2.jar')
+    compile files('libs/junit-4.12.jar')
+    compile files('libs/log4j-1.2.17.jar')
+    compile 'com.alibaba:fastjson:1.2.28'
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = "UTF-8"
+}
+buildscript {
+    ext.kotlin_version = '1.1.2-4'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+repositories {
+    mavenCentral()
+}

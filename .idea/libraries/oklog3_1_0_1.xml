@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="oklog3-1.0.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.simonpercic/oklog3/1.0.1/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.simonpercic/oklog3/1.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.simonpercic/oklog3/1.0.1/e0b3e7f7558992a75b9f3d2d04c86a55e46e5e4e/oklog3-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

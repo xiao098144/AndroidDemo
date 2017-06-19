@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB76F"
+    tools:context="com.xiao.demo.recyclerview.com.xiao.demo.TestActivity">
+
+    <RelativeLayout
+        android:id="@+id/test_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="New Button" />
+
+        <com.xiao.demo.customView.IntegralRecordView
+            android:id="@+id/test_integralrecordview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <com.xiao.demo.customView.CalendarRecordView
+            android:id="@+id/test_calendarrecordview"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/test_integralrecordview" />
+
+        <TextView
+            android:id="@+id/integral_tv_rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_calendarrecordview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/lightred_dash_rectangle"
+            android:lineSpacingExtra="1.4dp"
+            android:lineSpacingMultiplier="1.3"
+            android:padding="13dp"
+            android:textColor="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/integral_tv_rules">
+
+            <LinearLayout
+                android:id="@+id/integral_bg_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/integral_title" />
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/integral_tv_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:background="@mipmap/integral_calendar_bg"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/integral_tv_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/integral_calendar_bg"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/integral_tv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@mipmap/integral_calendar_bg"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="天"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/cut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/layout"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/integral_tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="1.1dp"
+                    android:textColor="@android:color/tertiary_text_dark"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="40dp"
+                android:background="@mipmap/integral_cloud_left" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="160dp"
+                android:layout_toRightOf="@id/integral_bg_layout"
+                android:background="@mipmap/integral_cloud_right" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

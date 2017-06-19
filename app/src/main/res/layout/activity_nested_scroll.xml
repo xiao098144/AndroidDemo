@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_scroll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/nested_scroll_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/nested_scroll_appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/nested_scroll_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/asdfg"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/nested_scroll_toolbar_invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:title="invisible"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/nested_scroll_toolbar_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:title="scroll" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/nested_scroll_toolbar_snap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light"
+                android:visibility="gone"
+                app:layout_scrollFlags="snap"
+                app:title="snap" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/nested_scroll_toolbar_euc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_purple"
+                android:visibility="gone"
+                app:layout_scrollFlags="exitUntilCollapsed"
+                app:title="exitUntilCollapsed" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/nested_scroll_toolbar_eac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_dark"
+                android:visibility="gone"
+                app:layout_scrollFlags="enterAlwaysCollapsed"
+                app:title="enterAlwaysCollapsed" />
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/nested_scroll_toolbar_enteralways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:visibility="gone"
+                app:layout_scrollFlags="enterAlways"
+                app:title="enterAlways" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ssdddsdsddddddd
+            ddddddddddddddddddddddddddddd
+            dddsfghjhgggggggggggggggggggg
+            ggggggggggggggggggggggggggggg
+            ggggggggggggggggggggggggggggg
+            gggggggggggggdd" />
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nested_scroll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:title="NestedScrollTitle"
+        android:titleTextColor="@android:color/white"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+</RelativeLayout>

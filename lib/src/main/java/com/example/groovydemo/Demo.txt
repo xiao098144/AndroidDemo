@@ -1,0 +1,145 @@
+/*连接消息定义*/
+#define LMT_TO_ENB_LOGIN_REQ   		 		(0xF001)
+#define ENB_TO_LMT_LOGIN_ACK  		 		(0xF002)
+#define ENB_TO_LMT_LOGIN_NACK  		 		(0xF003)
+
+/*扫频配置*/
+#define LMT_TO_ENB_SCAN_CFG   	         (0xF004)
+#define ENB_TO_LMT_SCAN_ACK  		 		(0xF005)
+#define ENB_TO_LMT_SCAN_NACK  		 		(0xF006)
+#define ENB_TO_LMT_SCAN_RPT  		 		(0xF007)
+
+
+/*基站配置定义*/
+#define LMT_TO_ENB_BS_PARAM_CFG   		 	 (0xF008)
+#define ENB_TO_LMT_BS_CFG_ACK  		 		(0xF009)
+#define ENB_TO_LMT_BS_CFG_NACK  		 		(0xF00A)
+
+/*基站启动*/
+#define LMT_TO_ENB_BS_START_REQ   			(0xF00B)
+#define ENB_TO_LMT_BS_START_ACK  		 		(0xF00C)
+#define ENB_TO_LMT_BS_START_NACK  		 		(0xF00D)
+
+/*基站终止*/
+#define LMT_TO_ENB_BS_STOP_REQ   			(0xF010)
+#define ENB_TO_LMT_BS_STOP_ACK  		 		(0xF011)
+#define ENB_TO_LMT_BS_STOP_NACK  		 		(0xF012)
+
+
+/*测量启动*/
+#define LMT_TO_ENB_UE_MEAS_START_REQ   			(0xF013)
+#define ENB_TO_LMT_UE_MEAS_START_ACK  		 		(0xF014)
+#define ENB_TO_LMT_UE_MEAS_START_NACK  		 		(0xF015)
+
+/*测量终止*/
+#define LMT_TO_ENB_UE_MEAS_STOP_REQ   			(0xF016)
+#define ENB_TO_LMT_UE_MEAS_STOP_ACK  		 		(0xF017)
+#define ENB_TO_LMT_UE_MEAS_STOP_NACK  		 		(0xF018)
+
+/*IMSI采集上报*/
+#define LMT_ENB_TO_AP_UE_IDENTITY_RPT          		(0xF019)
+
+/*测量数据上报*/
+#define ENB_TO_AP_UE_MEAS_RPT   				(0xF01A)
+
+/*状态查询*/
+#define LMT_TO_ENB_STATE_REQ        			    (0xF01B)
+#define ENB_TO_LMT_STATE_RPT        				(0xF01C)
+
+/*心跳*/
+#define LMT_TO_ENB_KEEP_LIVE_REQ        			    (0xF01D)
+#define ENB_TO_LMT_KEEP_LIVE_ACK        				(0xF01E)
+
+
+/*密码修改*/
+#define LMT_TO_ENB_PW_MODIFY_REQ   			(0xF020)
+#define ENB_TO_LMT_PW_MODIFY_ACK  		 		(0xF021)
+#define ENB_TO_LMT_PW_MODIFY_NACK  		 		(0xF022)
+
+/*连接消息定义*/
+#define LMT_TO_DB_LOGIN_REQ   		 		(0xE001)
+#define DB_TO_LMT_LOGIN_ACK  		 		(0xE002)
+#define DB_TO_LMT_LOGIN_NACK  		 		(0xE003)
+
+
+/*测量配置定义*/
+#define LMT_TO_DB_BS_PARAM_CFG   		 	 (0xE004)
+#define DB_TO_LMT_BS_CFG_ACK  		 		(0xE005)
+#define DB_TO_LMT_BS_CFG_NACK  		 		(0xE006)
+
+/*测量启动*/
+#define LMT_TO_DB_UE_MEAS_START_REQ   			(0xE007)
+#define DB_TO_LMT_UE_MEAS_START_ACK  		 		(0xE008)
+#define DB_TO_LMT_UE_MEAS_START_NACK  		 		(0xE009)
+
+/*测量终止*/
+#define LMT_TO_DB_UE_MEAS_STOP_REQ   			(0xE010)
+#define DB_TO_LMT_UE_MEAS_STOP_ACK  		 		(0xE011)
+#define DB_TO_LMT_UE_MEAS_STOP_NACK  		 		(0xE012)
+
+
+/*测量数据上报*/
+#define DB_TO_AP_UE_MEAS_RPT   				(0xE013)
+
+
+/*心跳*/
+#define LMT_TO_DB_KEEP_LIVE_REQ        			    (0xE014)
+#define DB_TO_LMT_KEEP_LIVE_ACK        				(0xE015)
+
+
+/*密码修改*/
+#define LMT_TO_ENB_PW_MODIFY_REQ   			(0xE016)
+#define ENB_TO_LMT_PW_MODIFY_ACK  		 		(0xE017)
+#define ENB_TO_LMT_PW_MODIFY_NACK  		 		(0xE018)
+
+
+
+public static final String LMT_TO_ENB_LOGIN_REQ = "F001";
+public static final String ENB_TO_LMT_LOGIN_ACK = "F002";
+public static final String ENB_TO_LMT_LOGIN_NACK = "F003";
+public static final String LMT_TO_ENB_SCAN_CFG = "F004";
+public static final String ENB_TO_LMT_SCAN_ACK = "F005";
+public static final String ENB_TO_LMT_SCAN_NACK = "F006";
+public static final String ENB_TO_LMT_SCAN_RPT = "F007";
+public static final String LMT_TO_ENB_BS_PARAM_CFG = "F008";
+public static final String ENB_TO_LMT_BS_CFG_ACK = "F009";
+public static final String ENB_TO_LMT_BS_CFG_NACK = "F00A";
+public static final String LMT_TO_ENB_BS_START_REQ = "F00B";
+public static final String ENB_TO_LMT_BS_START_ACK = "F00C";
+public static final String ENB_TO_LMT_BS_START_NACK = "F00D";
+public static final String LMT_TO_ENB_BS_STOP_REQ = "F010";
+public static final String ENB_TO_LMT_BS_STOP_ACK = "F011";
+public static final String ENB_TO_LMT_BS_STOP_NACK = "F012";
+public static final String LMT_TO_ENB_UE_MEAS_START_REQ = "F013";
+public static final String ENB_TO_LMT_UE_MEAS_START_ACK = "F014";
+public static final String ENB_TO_LMT_UE_MEAS_START_NACK = "F015";
+public static final String LMT_TO_ENB_UE_MEAS_STOP_REQ = "F016";
+public static final String ENB_TO_LMT_UE_MEAS_STOP_ACK = "F017";
+public static final String ENB_TO_LMT_UE_MEAS_STOP_NACK = "F018";
+public static final String LMT_ENB_TO_AP_UE_IDENTITY_RPT = "F019";
+public static final String ENB_TO_AP_UE_MEAS_RPT = "F01A";
+public static final String LMT_TO_ENB_STATE_REQ = "F01B";
+public static final String ENB_TO_LMT_STATE_RPT = "F01C";
+public static final String LMT_TO_ENB_KEEP_LIVE_REQ = "F01D";
+public static final String ENB_TO_LMT_KEEP_LIVE_ACK = "F01E";
+public static final String LMT_TO_ENB_PW_MODIFY_REQ = "F020";
+public static final String ENB_TO_LMT_PW_MODIFY_ACK = "F021";
+public static final String ENB_TO_LMT_PW_MODIFY_NACK = "F022";
+public static final String LMT_TO_DB_LOGIN_REQ = "E001";
+public static final String DB_TO_LMT_LOGIN_ACK = "E002";
+public static final String DB_TO_LMT_LOGIN_NACK = "E003";
+public static final String LMT_TO_DB_BS_PARAM_CFG = "E004";
+public static final String DB_TO_LMT_BS_CFG_ACK = "E005";
+public static final String DB_TO_LMT_BS_CFG_NACK = "E006";
+public static final String LMT_TO_DB_UE_MEAS_START_REQ = "E007";
+public static final String DB_TO_LMT_UE_MEAS_START_ACK = "E008";
+public static final String DB_TO_LMT_UE_MEAS_START_NACK = "E009";
+public static final String LMT_TO_DB_UE_MEAS_STOP_REQ = "E010";
+public static final String DB_TO_LMT_UE_MEAS_STOP_ACK = "E011";
+public static final String DB_TO_LMT_UE_MEAS_STOP_NACK = "E012";
+public static final String DB_TO_AP_UE_MEAS_RPT = "E013";
+public static final String LMT_TO_DB_KEEP_LIVE_REQ = "E014";
+public static final String DB_TO_LMT_KEEP_LIVE_ACK = "E015";
+public static final String LMT_TO_ENB_PW_MODIFY_REQ = "E016";
+public static final String ENB_TO_LMT_PW_MODIFY_ACK = "E017";
+public static final String ENB_TO_LMT_PW_MODIFY_NACK = "E018";

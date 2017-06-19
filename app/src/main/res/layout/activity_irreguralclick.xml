@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99ffffff">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/a_area" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img1"
+                android:layout_alignTop="@id/img1"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="#33ffffff"
+                    android:drawableBottom="@mipmap/onlive_chose_seat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:text="A区\n70/100"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/b_area" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img2"
+                android:layout_alignLeft="@id/img2"
+                android:layout_alignTop="@id/img2"
+                android:paddingLeft="10dp"
+                android:paddingTop="90dp">
+
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableBottom="@mipmap/onlive_chose_seat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:padding="8dp"
+                    android:text="B区 100/100"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/c_area" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img3"
+                android:layout_alignRight="@id/img3"
+                android:layout_alignTop="@id/img3"
+                android:paddingRight="10dp"
+                android:paddingTop="90dp">
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@mipmap/onlive_chose_seat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:padding="8dp"
+                    android:text="C区 100/100"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/d_area" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img4"
+                android:layout_alignLeft="@id/img4"
+                android:layout_alignRight="@id/img4"
+                android:paddingBottom="6dp">
+
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableBottom="@mipmap/onlive_chose_seat"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:padding="8dp"
+                    android:text="D区 100/100"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/e_area" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/img5"
+                android:layout_alignRight="@id/img5"
+                android:layout_alignTop="@id/img5">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/onlive_chose_seat"
+                    android:gravity="center_vertical"
+                    android:includeFontPadding="false"
+                    android:padding="8dp"
+                    android:text="E区 100/100"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

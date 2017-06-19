@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/integral_img_scale"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/space"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/integral_img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:src="@mipmap/close" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/integral" />
+
+        <TextView
+            android:id="@+id/integral_tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="1.1dp"
+            android:lineSpacingMultiplier="1.1"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="20dp"
+        android:layout_alignBottom="@id/framelayout"
+        android:layout_height="20dp"
+        />
+
+
+
+
+
+</RelativeLayout>

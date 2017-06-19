@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiao.demo.design.ToolBarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark">
+
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_tv1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="2dp"-->
+            <!--android:background="@android:color/holo_purple"-->
+            <!--android:text="dsgkjl;" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_tv2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="2dp"-->
+            <!--android:background="@android:color/holo_red_light"-->
+            <!--android:text="dsgkjl;" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_tv3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="2dp"-->
+            <!--android:background="@android:color/holo_blue_bright"-->
+            <!--android:text="dsgkjl;" />-->
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

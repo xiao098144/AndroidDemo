@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sticky_recycler_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/sticky_recycler_rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <FrameLayout
+            android:id="@+id/sticky_layout0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb0"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sticky_layout1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="13" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sticky_layout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="14" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sticky_layout3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="15" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sticky_layout4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sticky_layout5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="17" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/sticky_layout6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/sticky_recycler_rb6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rb_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/green_oval_bg"
+                android:gravity="center"
+                android:text="18" />
+        </FrameLayout>
+
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:numColumns="7"
+        android:stretchMode="none">
+
+    </GridView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sticky_recycler_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

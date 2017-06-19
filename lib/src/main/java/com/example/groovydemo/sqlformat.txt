@@ -1,0 +1,27 @@
+create table tys_ext_vip_package
+(
+   data_id              int                            not null,
+   member_level         int                            null,
+   member_name          varchar                        null,
+   member_price         float                          null,
+   menber_timelength    float                          null,
+   create_time          char                           null,
+   state                int                            null,
+   is_del               int                            null,
+   constraint PK_TYS_EXT_VIP_PACKAGE primary key clustered (data_id)
+);
+
+comment on column tys_ext_vip_package.member_level is
+'会员级别';
+
+comment on column tys_ext_vip_package.member_name is
+'会员名称';
+
+comment on column tys_ext_vip_package.member_price is
+'套餐价格';
+
+comment on column tys_ext_vip_package.menber_timelength is
+'套餐时长，单位年';
+
+comment on column tys_ext_vip_package.state is
+'套餐状态';
