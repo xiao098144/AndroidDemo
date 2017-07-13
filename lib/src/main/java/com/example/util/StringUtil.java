@@ -8,9 +8,28 @@ package com.example.util;
 public class StringUtil {
 
     public static void main(String[] args) {
-        String s = formatTime("2017-03-14 17:10:22");
-        System.out.println("main,  [args] s = " + s);
-        stringTest();
+//        String s = formatTime("2017-03-14 17:10:22");
+//        System.out.println("main,  [args] s = " + s);
+//        stringTest();
+        test2();
+
+    }
+
+    private static void test2() {
+        String s = "machine_company_data_id";
+//        String c = String.valueOf(s.charAt(0));
+//        s.replace(c,c.toUpperCase());
+        String[] split = s.split("_");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < split.length; i++) {
+            String s1 = split[i];
+            if (i == 0) sb.append(s1);
+            else {
+                String c = String.valueOf(s1.charAt(0));
+                sb.append(s1.replace(c, c.toUpperCase()));
+            }
+        }
+        System.out.println("test2,  [] " + sb);
     }
 
     private static void stringTest() {
@@ -62,7 +81,7 @@ public class StringUtil {
         if (date.startsWith("0")) {
             date = date.substring(1);
         }
-        sb.append(" "+mm + "yue");
+        sb.append(" " + mm + "yue");
         sb.append(date + "ri");
         sb.append(" " + time.substring(11, 16));
         return sb.toString();

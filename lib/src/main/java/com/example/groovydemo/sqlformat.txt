@@ -1,49 +1,28 @@
-﻿create table tys_ext_vip_package
+﻿create table tys_ext_yw_patients_viprecord
 (
-   data_id              int                            not null,
-   member_level         int                            null,
-   member_name          varchar                        null,
-   member_price         float                          null,
-   menber_timelength    float                          null,
-   create_time          char                           null,
-   state                int                            null,
-   is_del               int                            null,
-   constraint PK_TYS_EXT_VIP_PACKAGE primary key clustered (data_id)
+   data_id              int(10)                        not null,
+   patient_id           int(10)                        null,
+   vip_package_id       int(10)                        null,
+   vip_start_time       char(20)                       null,
+   vip_end_time         char(20)                       null,
+   create_time          char(20)                       null,
+   state                int(10)                        null,
+   is_del               int(10)                        null,
+   constraint PK_TYS_EXT_YW_PATIENTS_VIPRECO primary key clustered (data_id)
 );
 
-comment on column tys_ext_vip_package.member_level is
-'会员级别';
+comment on table tys_ext_yw_patients_viprecord is '用户会员套餐记录';
 
-comment on column tys_ext_vip_package.member_name is
-'会员名称';
+comment on column tys_ext_yw_patients_viprecord.patient_id is '患者id';
 
-comment on column tys_ext_vip_package.member_price is
-'套餐价格';
+comment on column tys_ext_yw_patients_viprecord.vip_package_id is '会员套餐id';
 
-comment on column tys_ext_vip_package.menber_timelength is
-'套餐时长，单位年';
+comment on column tys_ext_yw_patients_viprecord.vip_start_time is '会员开始时间';
 
-comment on column tys_ext_vip_package.state is
-'套餐状态';
+comment on column tys_ext_yw_patients_viprecord.vip_end_time is '会员结束时间';
 
+comment on column tys_ext_yw_patients_viprecord.create_time is '记录创建时间';
 
-CREATE TABLE `tys_ext_shc_dic_exchange_product` (
-  `data_id` int(10) NOT NULL AUTO_INCREMENT,
-  `is_del` int(1) NOT NULL DEFAULT '0',
-  `exchange_product_name` varchar(250) DEFAULT NULL COMMENT '商品名称',
-  `exchange_product_price` float DEFAULT NULL COMMENT '商品价格',
-  `exchange_product_brand` varchar(250) DEFAULT NULL COMMENT '商品品牌',
-  `exchange_product_model` varchar(250) DEFAULT NULL COMMENT '商品规格',
-  `exchange_product_place` varchar(250) DEFAULT NULL COMMENT '商品产地',
-  `exchange_product_info` varchar(250) DEFAULT NULL COMMENT '商品信息',
-  `exchange_product_img_first` varchar(250) DEFAULT NULL COMMENT '商品图片1',
-  `exchange_product_img_second` varchar(250) DEFAULT NULL COMMENT '商品图片2',
-  `exchange_product_img_third` varchar(250) DEFAULT NULL COMMENT '商品图片3',
-  `exchange_product_img_fourth` varchar(250) DEFAULT NULL COMMENT '商品图片4',
-  `exchange_product_bonus_points` varchar(250) DEFAULT NULL COMMENT '消费积分',
-  `exchange_product_banner` varchar(250) DEFAULT NULL COMMENT '商品推广图',
-  `exchange_product_create_time` datetime DEFAULT NULL COMMENT '创建时间',
-  `exchange_product_client_sn` text COMMENT 'patient-用户版,doctor-医生版,twy-糖无忧,youtang-优唐医生,365-365糖管家',
-  PRIMARY KEY (`data_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+comment on column tys_ext_yw_patients_viprecord.state is '套餐状态  0  尚未开始 1 进行中  2 套餐已结束  ';
+
 

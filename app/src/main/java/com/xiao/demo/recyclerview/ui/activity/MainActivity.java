@@ -6,9 +6,7 @@ import android.widget.Button;
 
 import com.xiao.demo.recyclerview.R;
 import com.xiao.demo.recyclerview.animation.AnimationActivity;
-import com.xiao.demo.recyclerview.widget.customView.BezierLineActivity;
-import com.xiao.demo.recyclerview.widget.customView.IrreguralClickActivity;
-import com.xiao.demo.recyclerview.widget.customView.IrreguralClickActivity2;
+import com.xiao.demo.recyclerview.animation.AnimationTestActivity;
 import com.xiao.demo.recyclerview.design.CardViewActivity;
 import com.xiao.demo.recyclerview.design.CollapsingToolBarLayoutActivity;
 import com.xiao.demo.recyclerview.design.DesignActivity;
@@ -22,6 +20,9 @@ import com.xiao.demo.recyclerview.rxjava.RxjavaActivity;
 import com.xiao.demo.recyclerview.test.JSTestActivity;
 import com.xiao.demo.recyclerview.test.TestActivity;
 import com.xiao.demo.recyclerview.test.TestActivity2;
+import com.xiao.demo.recyclerview.widget.customView.BezierLineActivity;
+import com.xiao.demo.recyclerview.widget.customView.IrreguralClickActivity;
+import com.xiao.demo.recyclerview.widget.customView.IrreguralClickActivity2;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -74,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.btn_lazyload)
     Button btn_lazyload;
+
+    @BindView(R.id.btn_animation2)
+    Button btn_animation2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,6 +155,8 @@ public class MainActivity extends AppCompatActivity {
         btn_irregrual2.setOnClickListener(v -> IrreguralClickActivity2.start(MainActivity.this));
 
         btn_lazyload.setOnClickListener(v -> LazyLoadActivity.start(MainActivity.this));
+
+        btn_animation2.setOnClickListener(v -> AnimationTestActivity.start(MainActivity.this));
 
     }
 
