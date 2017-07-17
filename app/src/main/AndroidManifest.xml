@@ -107,54 +107,46 @@
         <activity android:name=".test.JSTestActivity" />
         <activity
             android:name=".ui.activity.FragmentHostActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.DynamicTabActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/ColorTranslucentTheme"></activity>
-
+            android:theme="@style/ColorTranslucentTheme" />
         <activity
             android:name=".widget.searchview.SearchActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-
-        </activity>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".widget.searchview.SearchResultActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-
-        </activity>
-
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.xiao.demo.recyclerview.ui.activity.StickyRecyclerViewActivity"
+            android:name=".ui.activity.StickyRecyclerViewActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"></activity>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.GridViewActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
-
-        </activity>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".widget.customView.IrreguralClickActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"></activity>
-
+            android:screenOrientation="portrait" />
         <activity android:name=".widget.customView.IrreguralClickActivity2" />
-
         <activity android:name=".lazyload.LazyLoadActivity" />
-
         <activity
             android:name=".architectture.mvp.MVPActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".animation.AnimationTestActivity" />
-
+        <activity android:name=".animation.ValueAnimatorActivity" />
+        <activity
+            android:name=".animation.AnimationManagerActivity"
+            android:label="@string/title_activity_animation_manager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".animation.ObjectAnimationActivity"
+            android:label="@string/title_activity_object_animation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

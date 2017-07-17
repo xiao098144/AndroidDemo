@@ -27,6 +27,9 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+//    compile group: 'com.google.guava', name: 'guava', version: '22.0'
+
 }
 
 tasks.withType(JavaCompile){

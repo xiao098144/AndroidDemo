@@ -30,7 +30,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="RecyclerView" />
+            android:text="RecyclerView"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_picasso"
@@ -38,91 +39,104 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_margin="5dp"
-            android:text="Picasso" />
+            android:text="Picasso"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_flexbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="FlexBoxLayout" />
+            android:text="FlexBoxLayout"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_roundprogress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="RoundProgress" />
+            android:text="RoundProgress"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_wheelview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="WheelViewActivity" />
+            android:text="WheelViewActivity"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_tablayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="TabLayout" />
+            android:text="TabLayout"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="CardView" />
+            android:text="CardView"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_rxjava"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="RXJAVA" />
+            android:text="RXJAVA"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_webview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="WebView" />
+            android:text="WebView"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_nestscroll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="NestScroll" />
+            android:text="NestScroll"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="ToolBar" />
+            android:text="ToolBar"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_collapse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="CollapseLayout" />
+            android:text="CollapseLayout"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="TestActivity" />
+            android:text="TestActivity"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_test2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="TestActivity2" />
+            android:text="TestActivity2"
+            android:textAllCaps="false" />
 
 
         <Button
@@ -130,70 +144,80 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="OKHTTP" />
+            android:text="OKHTTP"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_animation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="动画" />
+            android:text="动画"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_bezier"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="贝塞尔" />
+            android:text="贝塞尔"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_ndk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="NDK" />
+            android:text="NDK"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_drawerlayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="DrawerLayout" />
+            android:text="DrawerLayout"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_jstest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="JSTest" />
+            android:text="JSTest"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_fragmenthost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="FRAGMENTTABHOST" />
+            android:text="FRAGMENTTABHOST"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_dynamic_tabhost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="动态标签" />
+            android:text="动态标签"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_stickyrecycler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="StickyRecyclerView" />
+            android:text="StickyRecyclerView"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="GridView" />
+            android:text="GridView"
+            android:textAllCaps="false" />
 
 
         <Button
@@ -201,28 +225,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="不规则图片" />
+            android:text="不规则图片"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_irreguralclcik2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="不规则图片2" />
+            android:text="不规则图片2"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_lazyload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="LazyLoad" />
+            android:text="LazyLoad"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/btn_animation2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="Animation2" />
+            android:text="Animation2"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_animation_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="AnimationManager"
+            android:textAllCaps="false" />
 
     </com.google.android.flexbox.FlexboxLayout>
 

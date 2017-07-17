@@ -1,46 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/animationtest_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"
-        android:src="@mipmap/ic_launcher" />
-    <!---->
-    <!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:orientation="horizontal"-->
-    <!--android:layout_height="match_parent">-->
-    <!---->
-    <!--</LinearLayout>-->
-
-    <Button
-        android:id="@+id/animationtest_btn_start"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="Start" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/animationtest_btn_end"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="End" />
+        <ImageView
+            android:id="@+id/animationtest_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ss" />
 
-    <Button
-        android:id="@+id/animationtest_btn_pause"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="Pause" />
+        <TextView
+            android:id="@+id/animationtest_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/cardview_dark_background"/>
 
-    <Button
-        android:id="@+id/animationtest_btn_cancel"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="Cancel" />
+        <Button
+            android:id="@+id/animationtest_btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Start" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/animationtest_btn_end"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="End" />
+
+        <Button
+            android:id="@+id/animationtest_btn_pause"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/animationtest_btn_resume"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Resume" />
+
+
+        <Button
+            android:id="@+id/animationtest_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+</ScrollView>

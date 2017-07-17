@@ -6,7 +6,8 @@ import android.widget.Button;
 
 import com.xiao.demo.recyclerview.R;
 import com.xiao.demo.recyclerview.animation.AnimationActivity;
-import com.xiao.demo.recyclerview.animation.AnimationTestActivity;
+import com.xiao.demo.recyclerview.animation.AnimationManagerActivity;
+import com.xiao.demo.recyclerview.animation.ValueAnimatorActivity;
 import com.xiao.demo.recyclerview.design.CardViewActivity;
 import com.xiao.demo.recyclerview.design.CollapsingToolBarLayoutActivity;
 import com.xiao.demo.recyclerview.design.DesignActivity;
@@ -78,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.btn_animation2)
     Button btn_animation2;
+
+    @BindView(R.id.btn_animation_manager)
+    Button btnAnimationManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -156,7 +160,9 @@ public class MainActivity extends AppCompatActivity {
 
         btn_lazyload.setOnClickListener(v -> LazyLoadActivity.start(MainActivity.this));
 
-        btn_animation2.setOnClickListener(v -> AnimationTestActivity.start(MainActivity.this));
+        btn_animation2.setOnClickListener(v -> ValueAnimatorActivity.start(MainActivity.this));
+
+        btnAnimationManager.setOnClickListener(v -> AnimationManagerActivity.start(MainActivity.this));
 
     }
 
