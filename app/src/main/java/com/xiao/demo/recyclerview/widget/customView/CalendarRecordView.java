@@ -132,9 +132,9 @@ public class CalendarRecordView extends View {
         for (int i = 0; i < 7; i++) {
             float x = marginRatio * radio + i * deviderRatio * radio;
             if (i < 3) {
-                x += (0.5 + i) * itemRatio * radio;
+                x = (float) (x + (0.5 + i) * itemRatio * radio);
             } else if (i == 3) {
-                x += 3 * itemRatio * radio + 0.5 * middleRatio * radio;
+                x = (float) (x + (3 * itemRatio * radio + 0.5 * middleRatio * radio));
             } else {
                 x += (i - 0.5) * itemRatio * radio + middleRatio * radio;
             }

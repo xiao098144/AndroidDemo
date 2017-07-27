@@ -22,6 +22,10 @@ import butterknife.OnClick;
 public class AnimationManagerActivity extends AppCompatActivity {
 
 
+    @BindView(R.id.am_btn_objectanimator)
+    Button am_btn_objectanimator;
+    @BindView(R.id.am_btn_interpolater)
+    Button am_btn_interpolater;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.toolbar_layout)
@@ -62,6 +66,11 @@ public class AnimationManagerActivity extends AppCompatActivity {
     @OnClick(R.id.am_btn_objectanimator)
     public void am_btn_objectanimator() {
         ObjectAnimationActivity.start(AnimationManagerActivity.this);
+    }
+
+    @OnClick(R.id.am_btn_interpolater)
+    public void am_btn_interpolater() {
+        InterpolaterActivity.start(AnimationManagerActivity.this);
     }
 
 

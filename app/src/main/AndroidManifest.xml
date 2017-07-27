@@ -146,6 +146,11 @@
         <activity
             android:name=".animation.ObjectAnimationActivity"
             android:label="@string/title_activity_object_animation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".animation.InterpolaterActivity" />
+        <activity
+            android:name=".ui.activity.TestActivity"
+            android:label="@string/title_activity_test"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

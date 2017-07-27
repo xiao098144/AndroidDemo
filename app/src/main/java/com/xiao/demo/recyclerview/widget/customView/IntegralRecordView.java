@@ -120,7 +120,7 @@ public class IntegralRecordView extends View {
         frameWidth = (int) (DESIGN_FRAME_WIDTH * ratio);
         frameHeight = frameWidth;
         bottom_circle_radius = ((float) frameWidth) / (2 * DESIGN_FRAME_HALFCIRCLE_COUNT);
-        frameHeight += bottom_circle_radius;
+        frameHeight = (int) (frameHeight + bottom_circle_radius);
 
         topDevide_height = (int) (DESIGN_TOP_DEVIDE_HEIGHT * ratio);
         topDevide_width = (int) (DESIGN_TOP_DEVIDE_WIDTH * ratio);

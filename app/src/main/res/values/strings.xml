@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidDemo</string>
+    <string name="app_name">小站4481</string>
     <string name="title_activity_ndk">NDKActivity</string>
     <string name="action_settings">Settings</string>
 
@@ -96,4 +96,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_object_animation">ObjectAnimationActivity</string>
+    <string name="title_activity_test">TestActivity</string>
 </resources>

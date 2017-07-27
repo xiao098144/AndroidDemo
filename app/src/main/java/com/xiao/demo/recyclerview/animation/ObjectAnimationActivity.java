@@ -1,7 +1,6 @@
 package com.xiao.demo.recyclerview.animation;
 
 import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -12,10 +11,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.xiao.demo.recyclerview.R;
 
@@ -57,6 +56,7 @@ public class ObjectAnimationActivity extends AppCompatActivity {
      * nineoldandroid animation
      */
     com.nineoldandroids.animation.ObjectAnimator animator9;
+    com.nineoldandroids.animation.ObjectAnimator animator9_tv;
 
     long duration = 5000;
 
@@ -85,37 +85,40 @@ public class ObjectAnimationActivity extends AppCompatActivity {
                 animator.setRepeatMode(ObjectAnimator.RESTART);
                 animator.setRepeatCount(ObjectAnimator.INFINITE);
                 animator.setDuration(duration);
-//                animator.setInterpolator(new TimeInterpolator() {
-//                    @Override
-//                    public float getInterpolation(float input) {
-//                        return 500;
-//                    }
-//                });
+//                animator.setInterpolator(input -> 500);
             }
             animator.start();
             if (animator_tv == null) {
 
-                animator_tv = ObjectAnimator.ofFloat(tv, "text", 0, 2000);
+                animator_tv = ObjectAnimator.ofFloat(tv, "text", 0, 5000);
                 animator_tv.setRepeatCount(ObjectAnimator.INFINITE);
                 animator_tv.setRepeatMode(ObjectAnimator.REVERSE);
-                animator_tv.setInterpolator(new AccelerateDecelerateInterpolator());
-                animator_tv.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                    @Override
-                    public void onAnimationUpdate(ValueAnimator animation) {
-                        Log.e(TAG, "onAnimationUpdate: animation.getAnimatedValue() = " + animation.getAnimatedValue() + " animation.getAnimatedFraction() = " + animation.getAnimatedFraction());
-                        tv.setText(String.valueOf(animation.getAnimatedValue()));
-                    }
-                });
+                animator_tv.setDuration(duration);
+                Log.e(TAG, "animationtest_btn_start: " + animator_tv.getDuration());
+//                animator_tv.setInterpolator(new AccelerateDecelerateInterpolator());
+                animator_tv.addUpdateListener(animation -> {
+//                            Log.e(TAG, "onAnimationUpdate: animation.getAnimatedValue() = " + animation.getAnimatedValue() + " animation.getAnimatedFraction() = " + animation.getAnimatedFraction());
+                            tv.setText(String.valueOf(animation.getAnimatedValue()));
+                        }
+                );
 
             }
             animator_tv.start();
         } else {//使用NineOldAndroid Animation
-            if (animator9 != null) {
+            if (animator9 == null) {
                 animator9 = com.nineoldandroids.animation.ObjectAnimator.ofFloat(img, "rotationY", 0, 360);
                 animator9.setRepeatMode(com.nineoldandroids.animation.ObjectAnimator.RESTART);
                 animator9.setRepeatCount(com.nineoldandroids.animation.ObjectAnimator.INFINITE);
                 animator9.setDuration(duration);
             }
+            animator9.start();
+            if (animator9_tv == null) {
+                animator9_tv = com.nineoldandroids.animation.ObjectAnimator.ofFloat(tv, "rotation", 0, 360);
+                animator9_tv.setRepeatMode(ObjectAnimator.REVERSE);
+                animator9_tv.setRepeatCount(com.nineoldandroids.animation.ObjectAnimator.INFINITE);
+                animator9_tv.setDuration(duration);
+            }
+            animator9_tv.start();
         }
     }
 
@@ -129,7 +132,12 @@ public class ObjectAnimationActivity extends AppCompatActivity {
                 animator.end();
             }
         } else {//使用NineOldAndroid Animation
-
+            if (animator9 != null) {
+                animator9.end();
+            }
+            if (animator9_tv != null) {
+                animator9_tv.end();
+            }
         }
     }
 
@@ -145,7 +153,12 @@ public class ObjectAnimationActivity extends AppCompatActivity {
                 }
             }
         } else {//使用NineOldAndroid Animation
-
+            if (animator9 != null) {
+//                animator9.
+            }
+            if (animator9_tv != null) {
+                Toast.makeText(this, "nine old android animation no pause method ", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -161,16 +174,26 @@ public class ObjectAnimationActivity extends AppCompatActivity {
                 }
             }
         } else {//使用NineOldAndroid Animation
-
+            Toast.makeText(this, "nine old android animation no resume method ", Toast.LENGTH_SHORT).show();
         }
     }
 
     @OnClick(R.id.animationtest_btn_cancel)
     public void animationtest_btn_cancel() {
         if (cb_system.isChecked()) {//使用系统动画
-
+            if (animator_tv != null) {
+                animator_tv.cancel();
+            }
+            if (animator != null) {
+                animator.cancel();
+            }
         } else {//使用NineOldAndroid Animation
-
+            if (animator9 != null) {
+                animator9.cancel();
+            }
+            if (animator9_tv != null) {
+                animator9_tv.cancel();
+            }
         }
     }
 

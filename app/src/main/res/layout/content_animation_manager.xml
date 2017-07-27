@@ -31,6 +31,12 @@
             android:text="Object Animator" />
 
 
+        <Button
+            android:id="@+id/am_btn_interpolater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interpolater" />
+
     </com.google.android.flexbox.FlexboxLayout>
 
 </android.support.v4.widget.NestedScrollView>
