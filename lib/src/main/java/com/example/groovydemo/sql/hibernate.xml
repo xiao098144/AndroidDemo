@@ -1,16 +1,19 @@
-    <class name="com.ddoctor.server.vo.crm.TysCrmYwRdUsersVO" table="users">
+    <class name="com.ddoctor.server.vo.crm.TysCrmYwRdSalesVO" table="sales">
         <id name="id" column="id" type="java.lang.Integer">
             <generator class="increment"/>
         </id>
-        <property name="name" column="name" type="java.lang.String"/>
-        <property name="email" column="email" type="java.lang.String"/>
-        <property name="password" column="password" type="java.lang.String"/>
-        <property name="rememberToken" column="remember_token" type="java.lang.String"/>
-        <property name="store" column="store" type="java.lang.Integer"/>
-        <property name="level" column="level" type="java.lang.String"/>
-        <property name="sex" column="sex" type="java.lang.Integer"/>
-        <property name="phone" column="phone" type="java.lang.String"/>
+        <property name="storeId" column="store_id" type="java.lang.Integer"/>
+        <property name="salesPersonId" column="sales_person_id" type="java.lang.Integer"/>
+        <property name="salesPersonType" column="sales_person_type" type="java.lang.Integer"/>
+        <property name="salesObjectName" column="sales_object_name" type="java.lang.String"/>
+        <property name="goodsId" column="goods_id" type="java.lang.Integer"/>
+        <property name="servicesId" column="services_id" type="java.lang.Integer"/>
+        <property name="num" column="num" type="java.lang.String"/>
+        <property name="saleTime" column="sale_time" type="java.util.Date"/>
+        <property name="sum" column="sum" type="java.lang.Integer"/>
+        <property name="remark" column="remark" type="java.lang.String"/>
+        <property name="isDel" column="is_del" type="java.lang.Integer"/>
         <property name="createdAt" column="created_at" type="java.util.Date"/>
         <property name="updatedAt" column="updated_at" type="java.util.Date"/>
-        <property name="isDel" column="is_del" type="java.lang.Integer"/>
+        <property name="deletedAt" column="deleted_at" type="java.util.Date"/>
     </class> 

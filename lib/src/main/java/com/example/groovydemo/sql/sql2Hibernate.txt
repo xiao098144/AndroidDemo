@@ -1,16 +1,19 @@
-CREATE TABLE `users` (
+CREATE TABLE `sales` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `store` int(10) NOT NULL COMMENT '所属门店',
-  `level` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '职位（店长、健康管理师、营养师、健康管理顾问）',
-  `sex` int(10) NOT NULL COMMENT '性别（0-女，1-男）',
-  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '联系电话',
+  `store_id` int(11) DEFAULT NULL COMMENT '门店id',
+  `sales_person_id` int(11) DEFAULT '0' COMMENT '售货员ID',
+  `sales_person_type` int(11) DEFAULT '0' COMMENT '售货员身份  同 user表level',
+  `sales_object_name` varchar(255) DEFAULT NULL COMMENT '销售商品 或者 服务名称',
+  `goods_id` int(11) DEFAULT '0' COMMENT '商品id',
+  `services_id` int(11) DEFAULT '0' COMMENT '服务id',
+  `num` varchar(255) DEFAULT NULL COMMENT '销售数量',
+  `sale_time` timestamp NULL DEFAULT NULL COMMENT '销售日期',
+  `sum` int(11) DEFAULT NULL COMMENT '小计',
+  `remark` varchar(255) DEFAULT NULL,
+  `is_del` tinyint(4) DEFAULT NULL COMMENT '是否删除 0-不删除 1-删除',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `is_del` int(1) NOT NULL DEFAULT '0',
+  `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
