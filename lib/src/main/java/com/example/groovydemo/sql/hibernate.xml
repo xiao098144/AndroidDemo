@@ -1,19 +1,12 @@
-    <class name="com.ddoctor.server.vo.crm.TysCrmYwRdSalesVO" table="sales">
+    <class name="com.ddoctor.server.vo.crm.TysCrmYwRdGoodStocksVO" table="good_stocks">
         <id name="id" column="id" type="java.lang.Integer">
             <generator class="increment"/>
         </id>
-        <property name="storeId" column="store_id" type="java.lang.Integer"/>
-        <property name="salesPersonId" column="sales_person_id" type="java.lang.Integer"/>
-        <property name="salesPersonType" column="sales_person_type" type="java.lang.Integer"/>
-        <property name="salesObjectName" column="sales_object_name" type="java.lang.String"/>
-        <property name="goodsId" column="goods_id" type="java.lang.Integer"/>
-        <property name="servicesId" column="services_id" type="java.lang.Integer"/>
+        <property name="goodId" column="good_id" type="java.lang.Integer"/>
         <property name="num" column="num" type="java.lang.String"/>
-        <property name="saleTime" column="sale_time" type="java.util.Date"/>
-        <property name="sum" column="sum" type="java.lang.Integer"/>
-        <property name="remark" column="remark" type="java.lang.String"/>
         <property name="isDel" column="is_del" type="java.lang.Integer"/>
+        <property name="deletedAt" column="deleted_at" type="java.util.Date"/>
         <property name="createdAt" column="created_at" type="java.util.Date"/>
         <property name="updatedAt" column="updated_at" type="java.util.Date"/>
-        <property name="deletedAt" column="deleted_at" type="java.util.Date"/>
+        <property name="storeId" column="store_id" type="java.lang.Integer"/>
     </class> 

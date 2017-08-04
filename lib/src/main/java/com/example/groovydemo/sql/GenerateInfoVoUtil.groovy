@@ -8,7 +8,7 @@ File file = new File('./')
 def map = [:]
 if (file.exists() && file.canRead()) {
     //匹配指定名称的文件
-    file.eachFileMatch(~/Tys.*SalesVO\.java/) { File value ->
+    file.eachFileMatch(~/Tys.*GoodStocksVO\.java/) { File value ->
 //        println("eachFileMatch  value is $value")
         def name = value.getName()
         name = name.substring(0, name.length() - 5)
